@@ -3,7 +3,7 @@ import requests
 import os
 os.makedirs('./img/', exist_ok=True)
 
-URL = "http://www.nationalgeographic.com.cn/animals/"
+URL = "http://www.ngchina.com.cn/animals/"
 
 html = requests.get(URL).text
 soup = BeautifulSoup(html, 'lxml')
